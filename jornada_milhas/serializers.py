@@ -4,4 +4,5 @@ from jornada_milhas.models import Depoimento
 class DepoimentosSerializers(serializers.ModelSerializer):
     class Meta:
         model = Depoimento
-        fields = ['id','foto','nome','depoimento']
+        fields = '__all__'
+    
