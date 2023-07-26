@@ -1,7 +1,7 @@
 from django.db import models
 
 class Depoimento(models.Model):
-    foto = models.ImageField(upload_to="setup/assets/galeria_users",blank=False)
+    foto = models.ImageField(blank=False)
     nome = models.CharField(max_length=100)
     depoimento = models.TextField(max_length=500)
 
@@ -9,7 +9,7 @@ class Depoimento(models.Model):
         return self.nome
 
 class Destino(models.Model):
-    foto = models.ImageField(upload_to="setup/assets/galeria_destinos", blank=False)
+    foto = models.ImageField(blank=False)
     nome = models.CharField(max_length=100)
     preço = models.IntegerField()
 
